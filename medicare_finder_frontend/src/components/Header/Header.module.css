@@ -1,0 +1,35 @@
+.navbarCustom {
+    background-color: #000070; 
+}
+
+.navBrand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 80px;
+  width: auto;
+  transition: transform 0.2s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.navLink {
+    color: #fff !important;
+    text-decoration: none;
+    margin-right: 1.25rem;
+}
+
+.navLink:hover {
+    color: #6cc8ef;
+}
+
+@media(max-width:576px){
+    .navLink {
+        margin-right: 0;
+    }
+}
