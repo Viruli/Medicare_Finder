@@ -1,0 +1,124 @@
+.container {
+  padding: 30px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  flex-wrap: wrap;
+}
+
+.pharmacyLogo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.headerInfo {
+  flex: 1;
+  min-width: 250px;
+}
+
+.headerInfo h2 {
+  margin: 0 0 8px 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.headerInfo .city {
+  margin: 0 0 5px 0;
+  color: #555;
+  font-size: 1rem;
+}
+
+.headerInfo .contact {
+  margin: 0 0 10px 0;
+  color: #777;
+  font-size: 0.95rem;
+}
+
+.statusBadge {
+  display: inline-block;
+  padding: 5px 14px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.open {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.closed {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  min-width: 120px;
+}
+
+.updatePharmacyBtn {
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.adminStatusControls {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+
+.medicineHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+
+.medicineGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.medicineCard {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.medicineCard:hover {
+  transform: translateY(-5px);
+}
+
+.medicineImage {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.cardActions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}

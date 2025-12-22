@@ -1,0 +1,81 @@
+.homeContainer {
+  position: relative;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.carousel img {
+  height: 80vh;
+  object-fit: cover;
+}
+
+.carouselCaption {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.carouselCaption h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.carouselCaption p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+/* About Section */
+.aboutSection {
+  text-align: center;
+  padding: 6rem 2rem;
+  background-color: #f8f9fa;
+}
+
+.aboutSection h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.aboutSection p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+}
+
+.aboutButtons > button {
+  margin: 0 0.5rem;
+  min-width: 180px;
+  gap: 20px;
+}
+
+.browseBtn {
+  background-color: #000070 !important;
+  border-color: #000070 !important;
+  color: #ffffff !important; /* Text color */
+  min-width: 180px;
+  margin: 0 0.5rem;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.browseBtn:hover {
+  background-color: #000050 !important;
+  border-color: #000050 !important;
+  transform: translateY(-2px);
+}
+
+.exploreBtn {
+  background-color: #ffffff !important;
+  border-color: #000070 !important;
+  color: #000070 !important; /* Text color */
+  min-width: 180px;
+  margin: 0 0.5rem;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.exploreBtn:hover {
+  background-color: #000050 !important;
+  border-color: #000050 !important;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+}
