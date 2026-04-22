@@ -40,3 +40,6 @@ uploads/
 build/
 !**/src/main/**/build/
 !**/src/test/**/build/
+
+# Environmental Variables
+.env
