@@ -13,7 +13,6 @@ public class Medicine {
     private String brand;
     private double unitPrice;
     private int quantity;
-
     private String imageUrl;
 
     @ManyToOne
@@ -79,3 +78,4 @@ public class Medicine {
         this.pharmacy = pharmacy;
     }
 }
+ 

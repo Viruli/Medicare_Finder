@@ -1,17 +1,20 @@
 package com.pharmacyproject.medicarefinder.entity;
 
 import java.time.LocalTime;
+import java.util.List;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.Transient;
-import lombok.Data;
+
 
 @Entity
-@Data
 public class Pharmacy {
 
     @Id
@@ -22,9 +25,7 @@ public class Pharmacy {
     private String city;
     private String email;
     private String phone;
-
     private String logoUrl;
-    private String password;
 
     private LocalTime openTime;
     private LocalTime closeTime;
@@ -34,6 +35,13 @@ public class Pharmacy {
 
     @Column(nullable = false)
     private boolean manualClosed = false;
+
+    @OneToOne
+    @JoinColumn(name = "user_id", unique = true)
+    private User owner;
+
+    @OneToMany(mappedBy = "pharmacy")
+    private List<Medicine> medicines;
 
     @Transient
     public boolean getOpenStatus() {
